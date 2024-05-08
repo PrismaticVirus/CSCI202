@@ -1,6 +1,8 @@
 fetch('http://api.open-notify.org/astros.json')
     .then(response => response.json())
     .then(data => {
+        document.getElementById('title').append(data.number);
+
         const namesList = data.people.map(person => person.name);
 
         const list = document.getElementById('peopleInSpace');

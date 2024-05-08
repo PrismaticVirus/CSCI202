@@ -21,7 +21,7 @@ function getCords(longitude, radius) {
     const centerX = (window.innerWidth / 2) + x;
     const centerY = (window.innerHeight / 2) + y;
 
-    return { x: centerX - 20, y: centerY - 20 };
+    return { x: centerX - 30, y: centerY - 30 };
 
 }
 function fetchData(){

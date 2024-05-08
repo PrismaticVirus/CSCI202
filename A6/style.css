@@ -1,3 +1,13 @@
+body{
+    background-color: black;
+}
+#title{
+    font-size: large;
+    position: relative;
+    top: -5px;
+    color: white;
+    text-align: center;
+}
 #earth {
     position: absolute; 
     left: 0; 
@@ -15,16 +25,15 @@
     bottom: 0;
     margin: auto; 
     display: inline-block;
-    border: solid black 1px;
+    border: dashed rgba(255, 255, 255, 0.2) 2px;
     border-radius: 50%;
 }
 #iss{
     position: absolute;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    width: 60px;
+    height: 60px;
     display: inline-block;
-    background-color: blue;
+    background-image: url(images/iss.svg);
     text-align: center;
 
 }
@@ -49,7 +58,7 @@ h3{
     left: 20px;
     top: 20px;
     display: none;
-    background-color: black;
+    background-color: rgb(50, 50, 50);
     border-radius: 10%;
 
 }
