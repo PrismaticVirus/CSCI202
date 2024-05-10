@@ -6,17 +6,12 @@ const orbitRadius = 150;
 orbit.style.width = 2 * orbitRadius + "px";
 orbit.style.height = 2 * orbitRadius + "px";
 
-// Convert the longitute into X and Y 
 function getCords(longitude, radius) {
 
-    // Convert longitude to radians
     const radians = longitude * (Math.PI / 180);
 
-    // Math
     const x = radius * Math.cos(radians);
     const y = radius * Math.sin(radians);
-
-    // More Math
 
     const centerX = (window.innerWidth / 2) + x;
     const centerY = (window.innerHeight / 2) + y;
@@ -25,7 +20,7 @@ function getCords(longitude, radius) {
 
 }
 function fetchData(){
-fetch("http://api.open-notify.org/iss-now.json")
+fetch("https://api.wheretheiss.at/v1/satellites/25544")
 
     .then(response => {
         if (!response.ok) {
@@ -35,7 +30,7 @@ fetch("http://api.open-notify.org/iss-now.json")
     })
 
     .then(data => {
-        const longitude = data.iss_position.longitude;
+        const longitude = data.longitude;
 
         iss.style.left = getCords(longitude, orbitRadius).x + "px";
         iss.style.top = getCords(longitude, orbitRadius).y + "px";

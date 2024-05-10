@@ -1,4 +1,4 @@
-fetch('http://api.open-notify.org/astros.json')
+fetch('https://raw.githubusercontent.com/unnamedActant/Example_JSON/main/astros.json')
     .then(response => response.json())
     .then(data => {
         document.getElementById('title').append(data.number);
