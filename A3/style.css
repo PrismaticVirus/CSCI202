@@ -1,0 +1,51 @@
+*{
+    font-family: Helvetica, sans-serif;
+}
+body{
+background-color: black;
+height: 100vh;
+}
+p, a{
+    padding: 5px;
+    font-size: xx-large;
+    font-weight: bold;
+    display: inline-block;
+    color: white;
+    border: 1px solid white;
+}
+#first{
+    position: absolute;
+    top: 45vh;
+    left: 45vw;
+}
+#second{
+    position: absolute;
+    top: 5%;
+    left: 80%;
+    display: none;
+}
+#third{
+    position: absolute;
+    top:20%;
+    left: 5%;
+    display: none;
+}
+#fourth{
+    position: absolute;
+    top: 80%;
+    left: 71%;
+    display: none;
+}
+#fifth{
+    position: absolute;
+    top: 66%;
+    display: none;
+}
+#rickRoll{
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    font-size: 300%;
+    display: none;
+    text-decoration: none;
+}

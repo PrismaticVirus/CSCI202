@@ -1,0 +1,27 @@
+*{
+    font-family: Helvetica, sans-serif;
+    color: black;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/background.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1, h2, h3, h4{
+    text-align: center;
+}
+p{
+    width: 40vw;
+}
+iframe{
+    width: 1200px;
+    height: 800px;
+
+}
+a:visited{
+    color: black;
+}
